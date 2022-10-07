@@ -1,5 +1,6 @@
-<?php include 'components/header.php';?>
+<?php include_once 'components/header.php';?>
 
-    <h1> Hello World <h1>
+<?php $title = 'Assignment - 01';?>
+<h1> <?php echo $title;?> <h1>
 
-<?php include 'components/footer.php';?>
+<?php include_once 'components/footer.php';?>
