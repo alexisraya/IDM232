@@ -1,0 +1,71 @@
+/* <?php
+/*** set the content type header ***/
+/*** Without this header, it wont work ***/
+/* header("Content-type: text/css");
+
+
+$font_family = 'Arial, Helvetica, sans-serif';
+$font_size = '0.7em';
+$border = '1px solid';
+?> */
+
+:root {
+    --black: #1D1E18;
+    --dark-purple: #59486D;
+    --purple: #9471C1;
+    --tan: #C48C6A;
+    --marigold: #F3A712;
+    --dirt-gold: #E4B66D;
+    --rose: #D5C5C8;
+    --beige: #EEDDD3;
+    --white: #F6F8F2;
+
+    --copy-color: var(--black);
+    --background-color: var(--white);
+    --heading-color: var(--purple);
+    --search-bar-color: var(--dark-purple);
+  }
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0px 50px;
+}
+
+.container-fluid{
+  background: var(--purple);
+  height: 100px;
+}
+
+.navbar-brand{
+  color: var(--white);
+}
+
+.recipe_holder{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  min-height: 494px;
+}
+
+.recipe_holder--image{
+  background-color: var(--beige);
+  border-radius: 5px;
+  height: auto;
+}
+
+.intructions{
+  background-color: var(--beige);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.line{
+  align-self: center;
+  background-color: var(--tan);
+  height: 2px;
+  margin: 50px 0px;
+  width: 500px;
+}
