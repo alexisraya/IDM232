@@ -1,0 +1,319 @@
+:root {
+  --black: #1D1E18;
+  --dark-purple: #59486D;
+  --purple: #9471C1;
+  --tan: #C48C6A;
+  --marigold: #F3A712;
+  --dirt-gold: #E4B66D;
+  --rose: #D5C5C8;
+  --beige: #EEDDD3;
+  --white: #F6F8F2;
+
+  --copy-color: var(--black);
+  --background-color: var(--white);
+  --heading-color: var(--purple);
+  --search-bar-color: var(--dark-purple);
+}
+
+/* html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+} */
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} */
+
+@font-face{
+  font-family: 'Righteous';
+  src: url(../fonts/Righteous-Regular.woff2) format('woff2');
+}
+
+@font-face{
+  font-family: 'WorkSans';
+  src: url(../fonts/WorkSans-Regular.woff2) format('woff2');
+}
+
+h1{
+  color: var(--copy-color);
+  font-family: 'Righteous', monospace, sans-serif;
+  font-size: 2.25rem;
+}
+
+h2{
+  color: var(--copy-color);
+  font-family: 'WorkSans', monospace, sans-serif;
+  font-size: 1.5rem;
+}
+
+h3{
+  color: var(--copy-color);
+  font-family: 'WorkSans', monospace, sans-serif;
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+h4,
+h5,
+h6{
+  color: var(--copy-color);
+  font-family: 'WorkSans', monospace, sans-serif;
+}
+
+p, a, li{
+  color: var(--copy-color);
+  font-family: 'WorkSans', monospace, sans-serif;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0px 40px;
+}
+
+.container-fluid{
+  background: var(--purple);
+  height: 100px;
+}
+
+.navbar-brand{
+  color: var(--white);
+}
+
+.ham-menu{
+  color: var(--white);
+  border: none;
+}
+
+.ham-menu__icon{
+  color: var(--white);
+}
+
+.recipe_holder{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  min-height: 350px;
+}
+
+.recipe_holder__image{
+  background-color: var(--beige);
+  border-radius: 5px;
+  height: auto;
+}
+
+.recipe_holder__image--image{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intructions{
+  background-color: var(--beige);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.line{
+  align-self: center;
+  background-color: var(--tan);
+  height: 2px;
+  margin: 50px 0px;
+  width: 500px;
+}
+
+.search-input{
+  background-color: var(--dark-purple);
+  border-color: transparent;
+}
+
+.search-button{
+  background-color: var(--dark-purple);
+  border-color: transparent;
+  color: var(--white);
+}
+
+.search-button:hover{
+  background-color: var(--purple);
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.navbar{
+  margin-bottom: 40px;
+}
+
+.nav-title{
+  font-family: 'Righteous', monospace, sans-serif;
+  font-size: 1.75rem;
+}
+
+.nav-toggle{
+  color: var(--white);
+  font-family: 'Righteous', monospace, sans-serif;
+  font-size: 1.25rem;
+}
+
+.nav-container{
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.footer{
+  align-items: center;
+  background-color: var(--purple);
+  bottom: 0;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  height: 135px;
+  justify-content: center;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+
+.footer-text{
+  color: var(--white);
+}
+
+.footer-subtext{
+  color: var(--white);
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1098px){
+  .recipe_holder{
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .recipe_holder__image{
+    max-height: 45vh;
+  }
+
+  .line{
+    width: 50vh;
+  }
+}

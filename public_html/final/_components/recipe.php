@@ -8,7 +8,7 @@
             <li class = "ingredients__item">Ingredient 1</li>
         </ul>
     </div>
-    <div class = "recipe_holder--image">
-    
+    <div class = "recipe_holder__image">
+        <img class = "recipe_holder__image--image" src="../dist/images/recipe-image.jpg" alt="Recipe Image">
     </div>
 </div>
