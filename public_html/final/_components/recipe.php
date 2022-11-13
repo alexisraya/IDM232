@@ -9,6 +9,6 @@
         </ul>
     </div>
     <div class = "recipe_holder__image">
-        <img class = "recipe_holder__image--image" src="../dist/images/recipe-image.jpg" alt="Recipe Image">
+        <img class = "recipe_holder__image--image" src="./dist/images/recipe-image.jpg" alt="Recipe Image">
     </div>
 </div>

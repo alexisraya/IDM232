@@ -179,6 +179,13 @@ p, a, li{
   font-family: 'WorkSans', monospace, sans-serif;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  justify-content: flex-end;
+}
+
 .main{
   display: flex;
   flex-direction: column;
