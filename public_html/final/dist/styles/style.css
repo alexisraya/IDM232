@@ -308,6 +308,38 @@ footer{
   padding: 0;
 }
 
+.form{
+  padding: 20px 40px;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.form-label{
+  font-family: 'WorkSans', monospace, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cook-time{
+  max-width: 150px;
+}
+
+.submit-button{
+  background-color: var(--marigold);
+  border: 10px;
+  border-color: var(--tan);
+  border-radius: 5px;
+  font-family: 'WorkSans', monospace, sans-serif;
+  font-size: 1.2rem;
+}
+
+.submit-button:hover{
+  background-color: var(--dirt-gold);
+}
+
 @media (max-width: 1098px){
   .recipe_holder{
     display: flex;
