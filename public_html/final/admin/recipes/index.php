@@ -1,14 +1,14 @@
 <?php
 
-include_once __DIR__ . '/../app.php';
+include_once __DIR__ . '/../../app.php';
 $page_title = 'Create Recipe';
-include_once __DIR__ . '/../_components/header.php';
-include_once __DIR__ . '/../_components/navbar.php';
+include_once __DIR__ . '/../../_components/header.php';
+include_once __DIR__ . '/../../_components/navbar.php';
 ?>
 
 <?php
-// get users data from database
-$query = 'SELECT * FROM users';
+// get recipes data from database
+$query = 'SELECT * FROM recipes';
 $result = mysqli_query($db_connection, $query);
 
 ?>
@@ -24,7 +24,7 @@ $result = mysqli_query($db_connection, $query);
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
           <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-            <form class="form" action="<?php echo site_url(); ?>/_includes/process-create-users.php" method="POST">
+            <form class="form" action="<?php echo site_url(); ?>/_includes/process-create-recipes.php" method="POST">
               <div class="block">
                 <label class="form-label" for="">Recipe Title:</label>
                 <input class="border-black border-2" type="text" name="recipe_title">
@@ -57,4 +57,4 @@ $result = mysqli_query($db_connection, $query);
 
 
 
-<?php include_once __DIR__ . '/../_components/footer.php';
+<?php include_once __DIR__ . '/../../_components/footer.php';
