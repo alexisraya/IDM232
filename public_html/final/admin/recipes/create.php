@@ -9,7 +9,11 @@ include_once __DIR__ . '/../../_components/navbar.php';
 <?php
 // get recipes data from database
 $query = 'SELECT * FROM recipes';
+// var_dump($query);
+// die();
 $result = mysqli_query($db_connection, $query);
+
+// var_dump($result);
 
 ?>
 

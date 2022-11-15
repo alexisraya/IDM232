@@ -22,6 +22,7 @@ if (!isset($recipes)) {
     // Cant combine functions with string so we have to assign the function to a variable here.
     $site_url = site_url();
     while ($recipe = mysqli_fetch_array($recipes)) {
+        // var_dump($recipe);
         echo "
           <tr>
             <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$recipe['id']}</td>

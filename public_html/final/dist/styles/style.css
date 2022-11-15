@@ -148,6 +148,10 @@ table {
   src: url(../fonts/WorkSans-Regular.woff2) format('woff2');
 }
 
+body{
+  min-height: 100vh;
+}
+
 h1{
   color: var(--copy-color);
   font-family: 'Righteous', monospace, sans-serif;

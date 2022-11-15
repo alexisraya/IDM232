@@ -13,7 +13,7 @@ $directions_value = $_POST['directions'];
 $id_value = $_POST['id'];
 
 // Create a SQL statement to insert the data into the database
-$query = "UPDATE recipes SET recipe_title = '{$recipe_title_value}', cook_time = '{$cook_time_value}', ingredients = '{$ingredients_value}', directions = '{$directions_value}' WHERE id = {$id_value}";
+$query = "UPDATE recipes SET recipe_title = '{$recipe_title_value}', cook_time = '{$cook_time_value}', ingredients = '{$ingredients_value}', directions = '{$directions_value}' WHERE id = '{$id_value}'";
 
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);
