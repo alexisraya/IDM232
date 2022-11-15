@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
                   py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2
                   focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto" type="submit" value="Update Recipe">
 
-              <input type="hidden" name="id" value="">
+              <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
             </form>
           </div>
         </div>
