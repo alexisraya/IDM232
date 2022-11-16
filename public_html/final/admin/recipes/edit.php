@@ -44,11 +44,11 @@ if ($result->num_rows > 0) {
               </div>
               <div class=" block">
                 <label for="">Ingredients</label>
-                <input class="border-black border-2" type="text" name="ingredients" value="<?php echo $recipe['ingredients']?>">
+                <input class="border-black border-2 js-tinymce" type="text" name="ingredients" value="<?php echo $recipe['ingredients']?>">
               </div>
               <div class=" block">
                 <label for="">Directions</label>
-                <input class="border-black border-2" type="text" name="directions" value="<?php echo $recipe['directions']?>">
+                <input class="border-black border-2 js-tinymce" type="text" name="directions" value="<?php echo $recipe['directions']?>">
               </div>
               <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4
                   py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2
