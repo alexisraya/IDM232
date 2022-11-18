@@ -23,4 +23,5 @@ $document_title = $page_title . ' | ' . $site_title; // Home | Cocina De Molina
 </head>
 
 <body>
+
   <!-- Main Content Begins -->

@@ -18,8 +18,13 @@ $recipes = get_recipes();
           if (isset($_GET['error'])) {
               echo '<p class="text-red-500">' . $_GET['error'] . '</p>';
           }
+        ?>
+      
+      <form action="<?php echo site_url(); ?>/search" method="GET">
+          <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search">
+          <button type="submit">Search</button>
+      </form>
 
-?>
       </div>
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
         <button type="button"
