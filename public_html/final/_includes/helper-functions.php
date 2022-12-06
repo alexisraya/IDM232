@@ -2,7 +2,6 @@
 /**
  * This file will hold all the functions for your project.
  */
-
 function get_project_path()
 {
     global $APP_CONFIG;
@@ -29,7 +28,10 @@ function site_url()
  */
 function redirect_to($path)
 {
-    header('Location: ' . site_url() . $path);
+    $full_url = site_url() . $path;
+    // Bluehost doesn't like when you use header() to redirect so we'll use JS instead
+    // header('Location: ' . $full_url);
+    echo "<script>window.location = '$full_url';</script>";
     exit;
 }
 
@@ -51,4 +53,23 @@ function project_root()
 function getFormattedDateTime()
 {
     return  date('Y-m-d H:i:s');
+}
+
+/**
+ * Escape special characters in strings:
+ * @link - https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
+ * @return string - The current page URL
+ */
+function sanitize_value($value)
+{
+    global $db_connection;
+    return mysqli_real_escape_string($db_connection, $value);
+}
+
+/**
+ * Check if user is logged in via session
+ */
+function is_user_logged_in()
+{
+    return isset($_SESSION['user']);
 }

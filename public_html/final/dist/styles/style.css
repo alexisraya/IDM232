@@ -138,6 +138,9 @@ table {
   border-spacing: 0;
 } */
 
+*{
+  box-sizing: border-box;
+}
 @font-face{
   font-family: 'Righteous';
   src: url(../fonts/Righteous-Regular.woff2) format('woff2');
@@ -148,8 +151,9 @@ table {
   src: url(../fonts/WorkSans-Regular.woff2) format('woff2');
 }
 
-body{
-  min-height: 100vh;
+html, body{
+  height: 100vh;
+  /* height: 100vh; */
 }
 
 h1{
@@ -184,10 +188,13 @@ p, a, li{
 }
 
 footer{
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   bottom: 0;
   justify-content: flex-end;
+  width: 100%;
+  /* justify-self: flex-end; */
 }
 
 .table-container{

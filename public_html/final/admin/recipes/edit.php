@@ -38,9 +38,19 @@ if ($result->num_rows > 0) {
               </div>
 
               <div class="block">
+                <label class="form-label" for="">Description</label>
+                <input class="border-black border-2 js-tinymce" type="text" name="description"
+                  value="<?php echo $recipe['description']?>">
+              </div>
+              <div class="block">
                 <label class="form-label" for="">Cook Time</label>
                 <input class="border-black border-2 cook-time" type="number" name="cook_time"
                   value="<?php echo $recipe['cook_time']?>">
+              </div>
+              <div class="block">
+                <label class="form-label" for="">Tools</label>
+                <input class="border-black border-2 js-tinymce" type="text" name="tools"
+                  value="<?php echo $recipe['tools']?>">
               </div>
               <div class=" block">
                 <label class="form-label" for="">Ingredients</label>
