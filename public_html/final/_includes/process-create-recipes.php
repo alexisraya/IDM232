@@ -7,6 +7,7 @@ if (!$_POST) {
 
 // Store $_POST data to variables for readability
 $recipe_title_value = sanitize_value($_POST['recipe_title']);
+$img_path_value = sanitize_value($_POST['img_path']);
 $description_value = sanitize_value($_POST['description']);
 $cook_time_value = sanitize_value($_POST['cook_time']);
 $tools_value = sanitize_value($_POST['tools']);
@@ -15,6 +16,7 @@ $directions_value = sanitize_value($_POST['directions']);
 
 $result = add_recipe(
     $recipe_title_value,
+    $img_path_value,
     $description_value,
     $cook_time_value,
     $tools_value,

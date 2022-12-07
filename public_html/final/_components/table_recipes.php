@@ -10,6 +10,8 @@ if (!isset($recipes)) {
         <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">ID</th>
         <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Title
         </th>
+        <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Image
+        </th>
         <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Description</th>
         <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Cook Time</th>
         <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Tools</th>
@@ -31,6 +33,7 @@ if (!isset($recipes)) {
             <tr>
               <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$recipe['id']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['recipe_title']}</td>
+              <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['img_path']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['description']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$cookTimeLabel}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['ingredients']}</td>

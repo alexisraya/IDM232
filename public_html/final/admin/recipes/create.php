@@ -35,6 +35,11 @@ $result = mysqli_query($db_connection, $query);
               </div>
 
               <div class="block">
+                <label class="form-label" for="">Image:</label>
+                <input class="border-black border-2" type="text" name="img_path">
+              </div>
+
+              <div class="block">
                 <label class="form-label" for="">Description:</label>
                 <input class="border-black border-2 js-tinymce" type="text" name="description">
               </div>

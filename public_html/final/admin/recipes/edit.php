@@ -38,6 +38,12 @@ if ($result->num_rows > 0) {
               </div>
 
               <div class="block">
+                <label class="form-label" for="">Image</label>
+                <input class="border-black border-2" type="text" name="img_path"
+                  value="<?php echo $recipe['img_path']?>">
+              </div>
+
+              <div class="block">
                 <label class="form-label" for="">Description</label>
                 <input class="border-black border-2 js-tinymce" type="text" name="description"
                   value="<?php echo $recipe['description']?>">

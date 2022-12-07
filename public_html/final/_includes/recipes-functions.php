@@ -20,12 +20,12 @@ function get_recipes()
  * @param  string $directions - direcetions for the recipe
  * @return object - mysqli_result
  */
-function add_recipe($recipe_title, $description, $cook_time, $tools, $ingredients, $directions)
+function add_recipe($recipe_title, $img_path, $description, $cook_time, $tools, $ingredients, $directions)
 {
     global $db_connection;
     $query = 'INSERT INTO recipes';
-    $query .= ' (recipe_title, description, cook_time, tools, ingredients, directions)';
-    $query .= " VALUES ('$recipe_title', '$description', '$cook_time', '$tools', '$ingredients', '$directions')";
+    $query .= ' (recipe_title, img_path, description, cook_time, tools, ingredients, directions)';
+    $query .= " VALUES ('$recipe_title', '$img_path', '$description', '$cook_time', '$tools', '$ingredients', '$directions')";
     
     // var_dump($query);
     // die();
