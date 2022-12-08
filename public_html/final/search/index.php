@@ -36,7 +36,7 @@
         <form action="<?php echo site_url(); ?>/search" method="GET">
           <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search"
             value="<?php echo $search; ?>">
-          <button type="submit">Search</button>
+          <button class = "btn btn-outline-success search-button" type="submit">Search</button>
         </form>
         <h2>You searched for "<?php echo $search; ?>"</h2>
         <?php
@@ -52,23 +52,33 @@
             }
         ?>
         </div>
-        <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+        <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none search-area">
             <button type="button"
             class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto">
             <a href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
                 Add Recipes</a></button>
         </div>
         </div>
-
+        <div class = "recipes-container">
         <?php
+            $site_url = site_url();
             if ($recipes_results) {
                 while ($recipes_results = mysqli_fetch_assoc($results)) {
-                    echo '<div class="flex flex-row justify-center items-center">';
-                    echo '<h2>' . $recipes_results['recipe_title'] . ' ' . $recipes_results['cook_time'] . '</h2>';
-                    echo '</div>';
+                    echo "
+                        <a class='recipes_link' href='{$site_url}/recipe/index.php?id={$recipes_results['id']}'>
+                            <div class ='recipe-card'>
+                            <div class = 'recipe-card-img-container'>
+                                <img class = 'recipe-card-img' src='{$site_url}/{$recipes_results['img_path']}'>
+                            </div>
+                            <h2>{$recipes_results['recipe_title']}</h2>
+                            <h3>{$recipes_results['cook_time']} min</h3>
+                            </div>
+                        </a>
+                    ";
                 }
             }
         ?>
+        </div>
 
   </div>
 </div>

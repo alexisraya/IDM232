@@ -22,7 +22,7 @@ $recipes = get_recipes();
       
       <form action="<?php echo site_url(); ?>/search" method="GET">
           <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search">
-          <button type="submit">Search</button>
+          <button class="btn btn-outline-success search-button" type="submit">Search</button>
       </form>
 
       </div>

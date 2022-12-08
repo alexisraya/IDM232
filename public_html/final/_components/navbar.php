@@ -14,8 +14,8 @@
         </li>
       </ul>
       
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 search-input" type="search" placeholder=" " aria-label="Search">
+      <form class="d-flex" action="<?php echo site_url(); ?>/search" method="GET">
+        <input class="form-control me-2 search-input" type="text" name="search" id="search" placeholder="">
         <button class="btn btn-outline-success search-button" type="submit">Search</button>
       </form>
     </div>

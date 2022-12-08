@@ -1,1 +1,4 @@
 .env.production.php
+
+*.jpg
+*.png
