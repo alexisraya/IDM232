@@ -180,6 +180,9 @@ td{
   color: var(--white);
 }
 
+/* .nav-style{
+  background-color: var(--purple);
+}
 .navbar{
   margin-bottom: 40px;
 }
@@ -196,9 +199,10 @@ td{
 }
 
 .nav-container{
+  background-color: var(--purple);
   padding-right: 40px;
   padding-left: 40px;
-}
+} */
 
 .footer{
   align-items: center;
