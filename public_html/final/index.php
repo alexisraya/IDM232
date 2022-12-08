@@ -20,9 +20,15 @@ include_once __DIR__ . '/_components/navbar.php';
                 She now wants to share her food with everyone else! This is the first time her dishes have ever been written down and translated from Spanish. She and her family hopes you can enjoy her food and recipes!
             </p>
         </div>
-        <div class = "welcome_image-contatiner">
-            <img class = "welcome_image" src="dist/images/nana_photo.jpg" alt="Nana Molina">
-        </div>
+        <?php
+            // Cant combine functions with string so we have to assign the function to a variable here.
+            $site_url = site_url();
+            echo"
+            <div class = 'welcome_image-contatiner'>
+                <img class = 'welcome_image' src='{$site_url}/dist/images/nana_photo.jpg' alt='Nana Molina'>
+            </div>
+            ";
+        ?>
     </div>
 </div>
 
