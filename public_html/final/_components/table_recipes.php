@@ -36,6 +36,7 @@ if (!isset($recipes)) {
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['img_path']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['description']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$cookTimeLabel}</td>
+              <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['tools']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['ingredients']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['directions']}</td>
               <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6 admin-buttons'>
