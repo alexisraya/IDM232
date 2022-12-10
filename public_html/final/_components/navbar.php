@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg py-0 bg-light">
-  <div class="container-fluid nav-container">
+<nav class="navbar navbar-expand-lg py-0 mb-3 nav-style">
+  <div class="container-fluid nav-container py-3">
     <a class="navbar-brand nav-title" href="<?php echo site_url(); ?>/index.php">Cocina De Molina</a>
     <button class="navbar-toggler ham-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon ham-menu__icon"></span>

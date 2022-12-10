@@ -107,7 +107,7 @@ td{
   padding: 0px 40px;
 }
 
-.container-fluid{
+/* .container-fluid{
   background: var(--purple);
   height: 100px;
 }
@@ -123,7 +123,7 @@ td{
 
 .ham-menu__icon{
   color: var(--white);
-}
+} */
 
 .recipe_holder{
   display: grid;
@@ -180,9 +180,9 @@ td{
   color: var(--white);
 }
 
-/* .nav-style{
+ .nav-style{
   background-color: var(--purple);
-}
+}/*
 .navbar{
   margin-bottom: 40px;
 }
