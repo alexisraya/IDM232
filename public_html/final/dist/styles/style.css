@@ -281,6 +281,7 @@ td{
   column-gap: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 25px;
 }
 
 .recipe-card{
@@ -290,6 +291,7 @@ td{
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  min-height: 450px;
   padding: 15px;
 }
 

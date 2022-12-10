@@ -32,7 +32,7 @@ if (!isset($recipes)) {
           echo "
             <tr>
               <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$recipe['id']}</td>
-              <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['recipe_title']}</td>
+              <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'><a href='{$site_url}/recipe/index.php?id={$recipe['id']}' target='_blank'>{$recipe['recipe_title']}</a></td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['img_path']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['description']}</td>
               <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$cookTimeLabel}</td>
