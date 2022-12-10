@@ -1,7 +1,7 @@
 <?php
 include_once __DIR__ . '/../../app.php';
 if (isset($_GET['id'])) {
-    $id = $_GET['id'];
+    $id = sanitize_value($_GET['id']);
 } else {
     die('ID is needed in URL');
 }

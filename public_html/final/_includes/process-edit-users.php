@@ -6,11 +6,11 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$first_name_value = $_POST['first_name'];
-$last_name_value = $_POST['last_name'];
-$email_value = $_POST['email'];
-$phone_value = $_POST['phone'];
-$id_value = $_POST['id'];
+$first_name_value = sanitize_value($_POST['first_name']);
+$last_name_value = sanitize_value($_POST['last_name']);
+$email_value = sanitize_value($_POST['email']);
+$phone_value = santize_value($_POST['phone']);
+$id_value = sanitize_value($_POST['id']);
 
 // Create a SQL statement to insert the data into the database
 $query = "UPDATE users SET first_name = '{$first_name_value}', last_name = '{$last_name_value}', email = '{$email_value}', phone = '{$phone_value}' WHERE id = {$id_value}";

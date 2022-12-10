@@ -14,8 +14,8 @@ $users = get_users();
           and role.</p>
         <?php
         // If error query param exist, show error message
-          if (isset($_GET['error'])) {
-              echo '<p class="text-red-500">' . $_GET['error'] . '</p>';
+          if (isset(sanitize_value($_GET['error']))) {
+              echo '<p class="text-red-500">' . sanitize_value($_GET['error']) . '</p>';
           }
 
 ?>

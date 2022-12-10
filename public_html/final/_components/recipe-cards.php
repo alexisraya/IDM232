@@ -9,7 +9,6 @@
     // Cant combine functions with string so we have to assign the function to a variable here.
     $site_url = site_url();
     while ($recipe = mysqli_fetch_array($recipes)) {
-        // var_dump($recipe);
         $cookTimeLabel = $recipe['cook_time'] . " min";
         echo "
           <a class='recipes_link' href='{$site_url}/recipe/index.php?id={$recipe['id']}'>

@@ -6,8 +6,8 @@
     $recipes = get_recipes();
 
     // Check if search exist in query
-    if (isset($_GET['search'])) {
-        $search = $_GET['search'];
+    if (isset(santize_value($_GET['search']))) {
+        $search = santize_value($_GET['search']);
     } else {
         $search = '';
     }
@@ -47,8 +47,8 @@
         ?>
         <?php
 // If error query param exist, show error message
-            if (isset($_GET['error'])) {
-                echo '<p class="text-red-500">' . $_GET['error'] . '</p>';
+            if (isset(sanitize_value($_GET['error']))) {
+                echo '<p class="text-red-500">' . sanitize_value($_GET['error']) . '</p>';
             }
         ?>
         </div>

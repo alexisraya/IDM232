@@ -26,9 +26,6 @@ function add_recipe($recipe_title, $img_path, $description, $cook_time, $tools, 
     $query = 'INSERT INTO recipes';
     $query .= ' (recipe_title, img_path, description, cook_time, tools, ingredients, directions)';
     $query .= " VALUES ('$recipe_title', '$img_path', '$description', '$cook_time', '$tools', '$ingredients', '$directions')";
-    
-    // var_dump($query);
-    // die();
 
     $result = mysqli_query($db_connection, $query);
     return $result;

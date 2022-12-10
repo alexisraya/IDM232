@@ -6,9 +6,9 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$name = $_POST['name'];
-$price = $_POST['price'];
-$description = $_POST['description'];
+$name = sanitize_value($_POST['name']);
+$price = sanitize_value($_POST['price']);
+$description = sanitize_value($_POST['description']);
 
 $result = add_services($name, $price, $description);
 

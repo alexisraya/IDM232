@@ -30,7 +30,6 @@
 
 html, body{
   height: 100vh;
-  /* height: 100vh; */
 }
 
 h1{
@@ -65,15 +64,14 @@ p, a, li{
 }
 
 footer{
-  /* position: absolute; */
   display: flex;
   flex-direction: column;
   bottom: 0;
   justify-content: flex-end;
   width: 100%;
-  /* justify-self: flex-end; */
 }
 
+/* Table Styles */
 .table-container{
   overflow-x: auto;
   padding: 20px 30px;
@@ -107,24 +105,7 @@ td{
   padding: 0px 40px;
 }
 
-/* .container-fluid{
-  background: var(--purple);
-  height: 100px;
-}
-
-.navbar-brand{
-  color: var(--white);
-}
-
-.ham-menu{
-  color: var(--white);
-  border: none;
-}
-
-.ham-menu__icon{
-  color: var(--white);
-} */
-
+/* Recipe Page Styles */
 .recipe_holder{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -163,6 +144,7 @@ td{
   width: 500px;
 }
 
+/* Search Bar Styles */
 .search-input{
   background-color: var(--dark-purple);
   border-color: transparent;
@@ -180,6 +162,12 @@ td{
   color: var(--white);
 }
 
+/* Search Page Styles*/
+.search-area{
+  padding-bottom: 20px;
+}
+
+/* Nav Styles */
  .nav-style{
   background-color: var(--purple);
 }
@@ -202,19 +190,7 @@ td{
   padding-left: 40px;
 }
 
-/*
-.navbar{
-  margin-bottom: 40px;
-}
-
-
-
-.nav-container{
-  background-color: var(--purple);
-  padding-right: 40px;
-  padding-left: 40px;
-} */
-
+/* Footer Styles */
 .footer{
   align-items: center;
   background-color: var(--purple);
@@ -241,6 +217,7 @@ td{
   padding: 0;
 }
 
+/* Edit Form Styles */
 .form{
   padding: 20px 40px;
 }
@@ -287,7 +264,7 @@ td{
   width: 100%;
 }
 
-/* Recipes Page Styles */
+/* Individual Recipes Page Styles */
 .recipes-container{
   column-gap: 20px;
   display: grid;
@@ -325,10 +302,7 @@ td{
   max-width: 750px;
 }
 
-/* search page */
-.search-area{
-  padding-bottom: 20px;
-}
+/* Media Queries */
 @media (max-width: 874px){
   .recipe_holder{
       display: flex;
