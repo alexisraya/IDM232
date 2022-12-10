@@ -182,14 +182,6 @@ td{
 
  .nav-style{
   background-color: var(--purple);
-}/*
-.navbar{
-  margin-bottom: 40px;
-}
-
-.nav-title{
-  font-family: 'Righteous', monospace, sans-serif;
-  font-size: 1.75rem;
 }
 
 .nav-item{
@@ -197,6 +189,25 @@ td{
   font-family: 'Righteous', monospace, sans-serif;
   font-size: 1.25rem;
 }
+
+.nav-title{
+  color: var(--white);
+  font-family: 'Righteous', monospace, sans-serif;
+  font-size: 1.75rem;
+}
+
+.nav-container{
+  background-color: var(--purple);
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+/*
+.navbar{
+  margin-bottom: 40px;
+}
+
+
 
 .nav-container{
   background-color: var(--purple);
